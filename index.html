@@ -37,39 +37,38 @@
     const c = document.getElementById('calc');
     const r = document.getElementById('reset');
 
-    i1.addEventListener('keydown', e => {
-        alert(e.keyCode)
-        if (e.code === 'Enter') {
+    i1.addEventListener('keydown', e => {\
+        if (e.keyCode === 13) {
             i2.focus();
             e.preventDefault();
         }
     });
     i2.addEventListener('keydown', e => {
-        if (e.code === 'Enter') {
+        if (e.keyCode === 13) {
             i3.focus();
             e.preventDefault();
         }
     });
     i3.addEventListener('keydown', e => {
-        if (e.code === 'Enter') {
+        if (e.keyCode === 13) {
             i4.focus();
             e.preventDefault();
         }
     });
     i4.addEventListener('keydown', e => {
-        if (e.code === 'Enter') {
+        if (e.keyCode === 13) {
             i5.focus();
             e.preventDefault();
         }
     });
     i5.addEventListener('keydown', e => {
-        if (e.code === 'Enter') {
+        if (e.keyCode === 13) {
             i6.focus();
             e.preventDefault();
         }
     });
     i6.addEventListener('keydown', e => {
-        if (e.code === 'Enter') {
+        if (e.keyCode === 13) {
             cal();
             e.preventDefault();
         }
