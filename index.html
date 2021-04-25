@@ -38,6 +38,7 @@
     const r = document.getElementById('reset');
 
     i1.addEventListener('keydown', e => {
+        console.log(e.code)
         if (e.code === 'Enter') {
             i2.focus();
             e.preventDefault();
