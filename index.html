@@ -37,37 +37,37 @@
     const c = document.getElementById('calc');
     const r = document.getElementById('reset');
 
-    i1.addEventListener('keypress', e => {
+    i1.addEventListener('keydown', e => {
         if (e.code === 'Enter') {
             i2.focus();
             e.preventDefault();
         }
     });
-    i2.addEventListener('keypress', e => {
+    i2.addEventListener('keydown', e => {
         if (e.code === 'Enter') {
             i3.focus();
             e.preventDefault();
         }
     });
-    i3.addEventListener('keypress', e => {
+    i3.addEventListener('keydown', e => {
         if (e.code === 'Enter') {
             i4.focus();
             e.preventDefault();
         }
     });
-    i4.addEventListener('keypress', e => {
+    i4.addEventListener('keydown', e => {
         if (e.code === 'Enter') {
             i5.focus();
             e.preventDefault();
         }
     });
-    i5.addEventListener('keypress', e => {
+    i5.addEventListener('keydown', e => {
         if (e.code === 'Enter') {
             i6.focus();
             e.preventDefault();
         }
     });
-    i6.addEventListener('keypress', e => {
+    i6.addEventListener('keydown', e => {
         if (e.code === 'Enter') {
             cal();
             e.preventDefault();
