@@ -12,6 +12,8 @@
 
 <body>
 <div class="container mt-5">
+    <input id="base" type="number" class="form-control" value="16">
+    <hr>
     <input id="1" type="number" class="form-control" tabindex="1">
     <input id="2" type="number" class="form-control" tabindex="2">
     <input id="3" type="number" class="form-control" tabindex="3">
@@ -26,6 +28,7 @@
 </body>
 
 <script>
+    const base = document.getElementById('base');
     const i1 = document.getElementById('1');
     const i2 = document.getElementById('2');
     const i3 = document.getElementById('3');
@@ -75,7 +78,7 @@
     });
 
     function cal() {
-        ires.value = 15.5 - ((Number(i1.value) + Number(i2.value) + Number(i3.value) + Number(i4.value) + Number(i5.value) + Number(i6.value)) / 6)
+        ires.value = Number(base.value) - ((Number(i1.value) + Number(i2.value) + Number(i3.value) + Number(i4.value) + Number(i5.value) + Number(i6.value)) / 6)
     }
 
     c.addEventListener('click', cal);
